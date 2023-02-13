@@ -1,0 +1,95 @@
+@import './--header.css';@import './--footer.css';
+@media (max-width: 1200px) {
+    .conteudo-section-container {
+        min-height: 540px !important;
+    }
+    .conteudo-subcontainer {
+        /* height: 660px !important; */
+        /* max-width: 75% !important; */
+        overflow: hidden !important;
+        overflow-y: scroll !important;
+        margin: auto !important;
+        /* position: inherit !important; */
+    }
+    .conteudo-subcontainer::-webkit-scrollbar{
+        display: none;
+    }
+    .fixed-fundo {
+        background-size: cover !important;
+        background-position: center;
+    }
+    .conteudo-camada {
+        min-width: inherit !important;
+        flex-wrap: wrap;
+        text-align: center;
+        /* gap: 35px; */
+    }
+    .conteudo-camada-titulo, .conteudo-camada-texto {
+        width: 100% !important;
+    }
+    .conteudo-camada-titulo h1 {
+        padding: 0px 5px;
+        font-size: 2rem !important;
+        font-weight: lighter;
+    }    .layer-conteudo.lc-1 {
+        justify-content: center !important;
+        align-items: center !important; 
+        gap: 40px !important;
+    }
+    .conteudo-camada-cards {
+        justify-content: center !important;
+    }
+    .card-contato {
+        width: 100%;
+        max-width: 200px;
+        overflow: hidden;
+        padding: .5rem !important;
+    }
+    .conteudo-camada-imagem, .conteudo-camada-imagem-contato {
+        width: 100% !important;
+        max-width: 284px !important;
+    }
+    .conteudo-camada-imagem-contato img {
+        padding: 1.6rem !important;
+    }
+    .card-contato div {
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+        font-size: 1rem !important;
+    }
+    .card-contato div svg {
+        width: 100% !important;
+        height: 100% !important;
+        max-width: 55px !important;
+        max-height: 55px !important;
+        padding: 0 !important;
+    }
+    .card-contato h2 {
+        display: none;
+    }
+    
+    /* .conteudo-camada-imagem img,
+    .conteudo-camada-imagem-contato img {
+        width: 95% !important;
+        height: 95% !important;
+    } */
+
+
+    .fundo-primeiro {
+        clip-path: ellipse(900px 900px at 87% 88%) !important;
+        background-image: url('../_banco_midias/_img/fundo.png') !important;
+    }
+    .fundo-segundo {
+        background-image: url('../_banco_midias/_img/cartoon_space.jpg') !important;
+        clip-path: ellipse(900px 900px at 30% 75%) !important;
+    }
+    .fundo-terceiro {
+        background-image: url('../_banco_midias/_img/website-mob.webp') !important;
+        clip-path: ellipse(900px 900px at 50% 75%) !important;
+    }
+    .fixed-fundo {
+        clip-path: ellipse(900px 900px at 50% 75%) !important;
+    }
+
+}

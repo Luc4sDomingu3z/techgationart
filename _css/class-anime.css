@@ -1,0 +1,164 @@
+.esmaecer-first {
+    /* transform: translate(0) scale(1);
+    opacity: 1; */
+    animation: fade_first ease-in-out 1.4s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -o-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    transition: .5s ease;
+}
+.esmaecer-second {
+    animation: fade_second ease-out 1.3s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -o-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    transition: .5s ease;
+}
+.esmaecer-third {
+    animation: fade_third ease 1s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -o-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    transition: .5s ease;
+}
+.esmaecer-third-2 {
+    animation: fade_third_2 ease 1.2s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -o-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    transition: .5s ease;
+}
+.esmaecer-fourth {
+    animation: fade_fourth ease .5s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -o-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    transition: .5s ease;
+}
+
+
+
+@keyframes fade_first{
+    from {
+        opacity: 0;
+        transform: translate(-200px, -100px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0px);
+        pointer-events: all;
+    }
+}
+
+
+
+@keyframes fade_second {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+        pointer-events: all;
+    }
+}
+
+
+
+@keyframes fade_third {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+        pointer-events: all;
+    }
+}
+
+
+
+@keyframes fade_third_2 {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    } to {
+        opacity: 1;
+        transform: translate(0);
+        pointer-events: all;
+    }
+}
+
+
+
+@keyframes fade_fourth {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+        pointer-events: all;
+    }
+}
+
+.secao-on, .secao-off {transition: .6s ,opacity .455s, transform .52s !important}
+.secao-off {
+    opacity: 0 !important;  
+    z-index: -1 !important;
+    /* left: 300px !important; */
+    transform: scale(.74)!important;
+    pointer-events: none !important;
+    /* animation-play-state: paused !important; */
+}
+.secao-on {
+    opacity: 1 !important;
+    z-index: 1 !important;
+    /* left: 0 !important; */
+    transform: scale(1) !important;
+    pointer-events: all !important;
+    /* animation-play-state: running !important; */
+}
+
+.fundo-primeiro {
+    clip-path: ellipse(729px 729px at 87% 88%) !important;
+    background-image: url('../_banco_midias/_img/fundo.png') !important;
+}
+.fundo-segundo {
+    background-image: url('../_banco_midias/_img/cartoon_space.jpg') !important;
+    clip-path: ellipse(729px 729px at 30% 75%) !important;
+}
+.fundo-terceiro {
+    background-image: url('../_banco_midias/_img/websites.png') !important;
+    clip-path: ellipse(729px 729px at 50% 75%) !important;
+}
+.fixed-fundo {
+    clip-path: ellipse(729px 729px at 87% 88%);
+    position: absolute;
+    -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image: linear-gradient(black, transparent);
+    inset: 0;
+    background-image: url('../_banco_midias/_img/fundo.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation: loop-fundo 11s infinite alternate-reverse;
+    transition: 1s, opacity .45s, background-image .25s !important; 
+}
