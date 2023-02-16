@@ -75,6 +75,17 @@
         height: 95% !important;
     } */
 
+    .conteudo-botao-website {
+        flex-direction: column-reverse !important;
+        align-items: center !important;
+    }
+    .conteudo-botao-website .website-slide-btn {
+        margin: initial !important;
+        transition: .35s;
+    }
+    .conteudo-botao-website .website-slide-btn:hover {
+        transform: translate(0) !important;
+    }
 
     .fundo-primeiro {
         clip-path: ellipse(900px 900px at 87% 88%) !important;

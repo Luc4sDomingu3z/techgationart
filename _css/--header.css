@@ -60,6 +60,9 @@
     .header--logo-container > .header--logo-conteudo a img {
         width: 120px;
     }
+    .header--logo-container > .header--logo-conteudo a:hover {
+        transform: scale(1);
+    }
     .logo-legenda {
         display: block;
         /* position: fixed; */

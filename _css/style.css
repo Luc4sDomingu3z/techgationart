@@ -337,9 +337,52 @@ body {
     object-fit: cover;
     /* clip-path: ellipse(640px 380px at 20% 30%); */
 }
-
-/* .camada-contato, .camada-website {
-    opacity: 0;
-    pointer-events: none;
+.conteudo-botao-website {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 20px;
+}
+.conteudo-botao-website .website-slide-btn {
+    display: flex;
+    align-items: center;
+    margin-left: 25%;
+    justify-content: center;
+    column-gap: 10px;
+    row-gap: 15px;
+    font-size: 18pt;
+    cursor: pointer;
+    padding: 4px 10px;
+    border: none;
+    outline-color: #6f53cd;
+    border-radius: 4px;
+    background-color: #0000002a;
+    color: #eee;
+    transition: .65s;
+}
+.conteudo-botao-website .website-slide-btn svg {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    background-color: transparent;
     transition: 1s;
-} */
+}
+
+.conteudo-botao-website .website-slide-btn:hover {
+    transform: translateX(10px);
+    padding: 10px 14px;
+    color: #000;
+    background-color: #ffffff86;
+    backdrop-filter: blur(5px) saturate(140%);
+}
+.conteudo-botao-website .website-slide-btn:hover svg {
+    background-color: #6f53cd;
+    color: #fff !important;
+}
+
+/* Site em progresso */
+
