@@ -103,4 +103,27 @@
         clip-path: ellipse(900px 900px at 50% 75%) !important;
     }
 
+    .site-progresso-container  {
+        width: 100% !important;
+        height: 100%;
+        border-radius: 0px !important;
+        overflow-y: auto !important;
+        background-position: center !important;
+    }
+    .site-progresso-img {
+        padding: 0 !important;
+        width: 0% !important;
+    }
+    .site-progresso-infoctt h2 {
+        text-align: center;
+    }
+    .site-progresso-infoctt p {
+        width: 90% !important;
+        background-color: #0000004f !important;
+        line-height: 1.3;
+        margin: 20px auto !important;
+    }
+    .progresso-fechar {
+        justify-content: center !important;
+    }
 }

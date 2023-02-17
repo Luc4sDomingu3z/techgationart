@@ -64,3 +64,16 @@ secao_botao[2].addEventListener('click', (e)=>{
     secao[1].classList.add('secao-off');secao[2].classList.add('secao-off')
     fundo.classList.add('fundo-primeiro'); fundo.classList.remove('fundo-segundo', 'fundo-terceiro')
 })
+
+const progresso_caixa = document.querySelector('.site-progresso')
+const progresso_cont = document.querySelector('.site-progresso-container')
+function close_msg() {
+    // progresso_caixa.style.display="none"
+    progresso_caixa.classList.remove('open-pgr');
+    progresso_cont.classList.remove('open-pgr');
+}
+function open_msg() {
+    progresso_caixa.style.display="flex"
+    progresso_caixa.classList.add('open-pgr');
+    progresso_cont.classList.add('open-pgr');
+}
