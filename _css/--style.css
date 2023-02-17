@@ -84,7 +84,7 @@
         transition: .35s;
     }
     .conteudo-botao-website .website-slide-btn:hover {
-        transform: translate(0) !important
+        transform: translate(0) !important;
     }
 
     .fundo-primeiro {
